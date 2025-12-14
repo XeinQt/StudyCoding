@@ -56,5 +56,8 @@ class Persons {
 
 const me = new Persons("Rico", "Alentijo", 22, "brown");
 
-console.log(me);
-console.log(me.greet());
+// console.log(me);
+// console.log(me.greet());
+
+
+

@@ -30,4 +30,25 @@ add.addEventListener("click", () => {
 
   personList.push(new Personss(first, last, age, eye, nationality));
   console.log(personList);
+
+  const div = document.getElementById("persons");
+  let text;
+  personList.forEach((per) => {
+    text += `
+        <h2>${per.first}</h2>
+        <h2>${per.last}</h2>
+        <h2>${per.age}</h2>
+        <h2>${per.eye}</h2>
+        <h2>${per.nationality}</h2>
+        <br/>
+    `;
+  });
+
+  div.innerHTML = text;
+
+  inputFirstName.value = "";
+  inputLastName.value = "";
+  inputAge.value = "";
+  inputEyeColor.value = "";
+  inputNationality.value = "";
 });

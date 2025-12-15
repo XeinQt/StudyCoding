@@ -42,4 +42,13 @@ function checkingTheAge(value, index, array) {
   return value > 18;
 }
 
-console.log(filterAge);
+// console.log(filterAge);
+
+const num = [2, 3, 52, 4, 32, 32];
+let sum = num.reduce(sumFunction);
+
+function sumFunction(total, value, index, array) {
+  return (total += value);
+}
+
+// console.log(sum);
